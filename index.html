@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="th">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coral Island - รายชื่อปลา</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<header class="container">
+		<h1>รายชื่อปลา Coral Island</h1>
+		<p class="subtitle">แหล่งข้อมูลจากไฟล์ coral_island_fish_cache.json</p>
+	</header>
+
+	<section class="container filters" id="filters">
+		<div class="filter-grid">
+			<div class="filter-col">
+				<label for="seasonSelect">ฤดูกาล</label>
+				<select id="seasonSelect">
+					<option value="">ทั้งหมด</option>
+					<option>ฤดูใบไม้ผลิ</option>
+					<option>ฤดูร้อน</option>
+					<option>ฤดูใบไม้ร่วง</option>
+					<option>ฤดูหนาว</option>
+				</select>
+			</div>
+			<div class="filter-col">
+				<label for="weatherSelect">สภาพอากาศ</label>
+				<select id="weatherSelect">
+					<option value="">ทั้งหมด</option>
+					<option>แดด</option>
+					<option>ฝน</option>
+					<option>พายุ</option>
+				</select>
+			</div>
+			<div class="filter-col">
+				<label for="areaSelect">จุดตกปลา</label>
+				<select id="areaSelect">
+					<option value="">ทั้งหมด</option>
+				</select>
+			</div>
+		</div>
+		<div class="filter-actions">
+			<button id="applyFiltersBtn">ใช้ตัวกรอง</button>
+			<button id="resetFiltersBtn" class="secondary">ล้างตัวกรอง</button>
+		</div>
+		<p class="helper-text">หมายเหตุ: หากเปิดไฟล์นี้โดยตรง อาจโหลดข้อมูลไม่สำเร็จเพราะข้อจำกัดของเบราว์เซอร์ โปรดเปิดผ่านเซิร์ฟเวอร์ท้องถิ่น เช่น ใช้คำสั่ง: python -m http.server</p>
+	</section>
+
+	<main class="container">
+	  <div id="summaryBar" class="summary-bar">
+			<span id="totalCount">0</span> รายการ
+		</div>
+		<div class="table-wrapper">
+			<table id="fishTable" class="fish-table">
+				<thead>
+					<tr>
+						<th class="col-fish">ปลา</th>
+						<th class="col-area">จุดตกปลา</th>
+						<th class="col-time">เวลา</th>
+						<th class="col-weather">สภาพอากาศ</th>
+						<th class="col-rarity">
+							<button id="raritySortBtn" class="sort-btn" aria-label="เรียงตามความหายาก">ความหายาก<span id="raritySortIcon" class="sort-icon" aria-hidden="true"></span></button>
+						</th>
+						<th class="col-price">
+							<button id="priceSortBtn" class="sort-btn" aria-label="เรียงตามราคา">ราคา<span id="priceSortIcon" class="sort-icon" aria-hidden="true"></span></button>
+						</th>
+					</tr>
+				</thead>
+				<tbody id="fishTbody"></tbody>
+			</table>
+			<div id="emptyState" class="empty" hidden>ไม่พบข้อมูลตามตัวกรอง</div>
+		</div>
+	</main>
+
+	<footer class="container footer">
+		<div>อัปเดตจากไฟล์: <code>coral_island_fish_cache.json</code></div>
+	</footer>
+
+	<script src="./app.js"></script>
+</body>
+	</html>
+
+

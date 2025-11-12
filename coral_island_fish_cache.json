@@ -1,0 +1,2023 @@
+{
+  "fetched_at": 1731296400,
+  "source": "local",
+  "items": [
+    {
+      "season": "ตกได้ทุกฤดูกาล",
+      "data": [
+        {
+          "name": "ปลาหมอสีฟลาวเวอร์ฮอร์น",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish19.jpg",
+          "area": [
+            "แม่น้ำในเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลานิล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish26.jpg",
+          "area": [
+            "บ่อน้ำ",
+            "ทะเลสาบ (ฤดูใบไม้ผลิ/ฤดูหนาว)",
+            "เหมืองดิน (ฤดูร้อน/ฤดูใบไม้ร่วง)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "เครย์ฟิช",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish14.jpg",
+          "area": [
+            "บ่อน้ำ",
+            "แม่น้ำฟาร์ม"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาไหลน้ำจืด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish21.jpg",
+          "area": [
+            "เหมืองน้ำ (ฤดูหนาว)",
+            "",
+            "",
+            "แม่น้ำฟาร์ม",
+            "ปากแม่น้ำ (ยกเว้นฤดูหนาว)"
+          ],
+          "time": [
+            "ทั้งวัน",
+            "",
+            "",
+            "12:00 - 00:50"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาม้าลาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish40.jpg",
+          "area": [
+            "ทุ่งนา",
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำป่า (ฤดูใบไม้ผลิ)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาเทราท์สีน้ำตาล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish3.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาช่อนทะเล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish8.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลท่าเรือ (ยกเว้นฤดูหนาว)",
+            "",
+            "เหมืองน้ำ (ฤดูหนาว)"
+          ],
+          "time": [
+            "06:00 - 16:00",
+            "",
+            "",
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลากบ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish22.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ",
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาหางเหลือง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish37.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "เหมืองไฟ (น้ำปกติ)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ",
+            "หิมะ",
+            "พายุหิมะ",
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาทูน่า",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish30.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลประภาคาร (ฤดูใบไม้ร่วง)",
+            "",
+            "เหมืองไฟ (น้ำปกติ)"
+          ],
+          "time": [
+            "12:00 - 18:00",
+            "",
+            "",
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ปลาปักเป้า",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish66.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลประภาคาร (ฤดูหนาว)",
+            "",
+            "เหมืองลม (ทุกฤดู)"
+          ],
+          "time": [
+            "06:00 - 16:00",
+            "",
+            "",
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาทับทิม",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish56.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "แม่น้ำในเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลากะพงแดง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish62.jpg",
+          "area": [
+            "ทะเลท่าเรือ (ฤดูใบไม้ผลิ/ฤดูหนาว)",
+            "เหมืองลม (ทุกฤดู)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลิงทะเล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish2.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ปลาแบทฟิชลายจุด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish65.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ",
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาเฟมแบค แองเจิล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish18.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ",
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "กุ้งล็อบสเตอร์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish47.jpg",
+          "area": [
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาสลิดหิน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish15.jpg",
+          "area": [
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม",
+            "หิมะ"
+          ],
+          "rarity": "Rare"
+        },
+        {
+          "name": "ปลาแมนดาริน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish51.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม",
+            "หิมะ"
+          ],
+          "rarity": "Rare"
+        },
+        {
+          "name": "ปลาเทวดา",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish43.jpg",
+          "area": [
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาบลูแทงค์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish61.jpg",
+          "area": [
+            "ทะเลชายหาด (ยกเว้นฤดูร้อน)",
+            "เหมืองดิน (ทุกฤดู)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาไฟร์ฟิช",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish17.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลาแมกเคอเรล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish49.jpg",
+          "area": [
+            "ทะเลป่า",
+            "ทะเลประภาคาร",
+            "เหมืองไฟ (ลาวา)"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปู",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish12.jpg",
+          "area": [
+            "ทุ่งนา",
+            "แม่น้ำป่า",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon"
+        },
+        {
+          "name": "ปลาซาดีน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish63.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลประภาคาร (ฤดูร้อน/ฤดูใบไม้ร่วง)",
+            "เหมืองไฟ (ลาวา/ทุกฤดู)"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "ปลากระพงแดง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish52.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "ปากแม่น้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common"
+        },
+        {
+          "name": "กุ้ง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish68.jpg",
+          "area": [
+            "บ่อน้ำ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        }
+      ]
+    },
+    {
+      "season": "ฤดูร้อน",
+      "data": [
+        {
+          "name": "ปลาชะโด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish28.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "06:00 - 12:00",
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        },
+        {
+          "name": "ปลาดุก",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish4.jpg",
+          "area": [
+            "ทุ่งนา",
+            "บ่อน้ำ",
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาคาร์ฟ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish44.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "แม่น้ำในเหมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ปลาทอง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish33.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำป่า",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทุกสภาพอากาศ"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
+        },
+        {
+          "name": "ปลาช่อน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish9.jpg",
+          "area": [
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 12:00",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาบลูกิล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish64.jpg",
+          "area": [
+            "บ่อน้ำ",
+            "แม่น้ำเมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
+        },
+        {
+          "name": "ปลาโกลเดนการ์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish31.jpg",
+          "area": [
+            "แม่น้ำป่า",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Rare",
+          "price": 210,
+          "tier1": 242,
+          "tier2": 273,
+          "tier3": 315,
+          "tier4": 420
+        },
+        {
+          "name": "ปลาหางเสือ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish5.jpg",
+          "area": [
+            "แม่น้ำป่า",
+            "แม่น้ำเมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลาไหลมอเรย์เยลโล่",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish32.jpg",
+          "area": [
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "วันที่ 15 -28",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Legendary",
+          "price": 745,
+          "tier1": 857,
+          "tier2": 969,
+          "tier3": 1118,
+          "tier4": 1490
+        },
+        {
+          "name": "ปลาหมึก",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish13.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "หมึกสาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 85,
+          "tier1": 98,
+          "tier2": 111,
+          "tier3": 128,
+          "tier4": 170
+        },
+        {
+          "name": "ปลาเก๋า",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลท่าเรือ",
+            "แม่น้ำเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        },
+        {
+          "name": "ปลานกแก้ว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
+        },
+        {
+          "name": "ปลากระเบนยักษ์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish29.jpg",
+          "area": [
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "วันที่ 15 -28",
+            "12:00 - 18:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        },
+        {
+          "name": "ปลาสิงโต",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish46.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลป่า"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
+        },
+        {
+          "name": "ปลาการ์ตูน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish7.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลาค็อด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish10.jpg",
+          "area": [
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาสากใหญ่",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
+        },
+        {
+          "name": "ปลาสเตอร์เจียน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ฉลามราชาอัมพัต",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish48.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "วันที่ 1-14",
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ฝน",
+            "พายุ",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 745,
+          "tier1": 857,
+          "tier2": 969,
+          "tier3": 1118,
+          "tier4": 1490
+        },
+        {
+          "name": "ฉลามขาว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/coralfishre1.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "วันที่ 1-14",
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        }
+      ]
+    },
+    {
+      "season": "ฤดูหนาว",
+      "data": [
+        {
+          "name": "ปลาแซลมอน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาอโรวานาเงิน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish6.jpg",
+          "area": [
+            "เหมืองทั้งสี่"
+          ],
+          "time": [
+            "12:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 80,
+          "tier1": 92,
+          "tier2": 104,
+          "tier3": 120,
+          "tier4": 160
+        },
+        {
+          "name": "ปลาเรนโบว์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish1.jpg",
+          "area": [
+            "แม่น้ำเมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
+        },
+        {
+          "name": "ปลาช่อนแอมะซอน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish45.jpg",
+          "area": [
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ปลาหางเสือ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish5.jpg",
+          "area": [
+            "แม่น้ำป่า",
+            "แม่น้ำเมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลานกแก้ว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
+        },
+        {
+          "name": "ปลาเสือพ่นน้ำ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish74.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำในเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
+        },
+        {
+          "name": "ปลาหัวแกะเอเชีย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish50.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ปลาปักเป้ากล่อง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish67.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
+        },
+        {
+          "name": "ปลาทูน่าครีบเหลือง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish35.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "12:00 - 18:00"
+          ],
+          "weather": [
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Rare",
+          "price": 210,
+          "tier1": 242,
+          "tier2": 273,
+          "tier3": 315,
+          "tier4": 420
+        },
+        {
+          "name": "ปลากระโทงดาบ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish20.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 210,
+          "tier1": 242,
+          "tier2": 273,
+          "tier3": 315,
+          "tier4": 420
+        },
+        {
+          "name": "ปลาค็อด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish10.jpg",
+          "area": [
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม",
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาฉลามเลื่อยเขียว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish36.jpg",
+          "area": [
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        },
+        {
+          "name": "ปลาสเตอร์เจียน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ปลาแซลมอนช็อกอาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish11.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 80,
+          "tier1": 92,
+          "tier2": 104,
+          "tier3": 120,
+          "tier4": 160
+        },
+        {
+          "name": "ฉลามหัวค้อน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish39.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "วันที่ 8-21",
+            "06:00 - 12:00",
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "หิมะ",
+            "พายุหิมะ"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        }
+      ]
+    },
+    {
+      "season": "ฤดูใบไม้ผลิ",
+      "data": [
+        {
+          "name": "ปลาแซลมอน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาดุก",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish4.jpg",
+          "area": [
+            "ทุ่งนา",
+            "บ่อน้ำ",
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาคาร์ฟ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish44.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "แม่น้ำในเหมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ปลาแบล็คโกสต์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish60.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำเมือง",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลาจระเข้",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish24.jpg",
+          "area": [
+            "แม่น้ำป่า",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ปลาเรนโบว์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish1.jpg",
+          "area": [
+            "แม่น้ำเมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
+        },
+        {
+          "name": "ปลาช่อน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish9.jpg",
+          "area": [
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 12:00",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "มังค์ฟิช",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish54.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 745,
+          "tier1": 857,
+          "tier2": 969,
+          "tier3": 1118,
+          "tier4": 1490
+        },
+        {
+          "name": "ปลาไหลมอเรย์เยลโล่",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish32.jpg",
+          "area": [
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "วันที่ 15 -28",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Legendary",
+          "price": 745,
+          "tier1": 857,
+          "tier2": 969,
+          "tier3": 1118,
+          "tier4": 1490
+        },
+        {
+          "name": "หมึกสาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 85,
+          "tier1": 98,
+          "tier2": 111,
+          "tier3": 128,
+          "tier4": 170
+        },
+        {
+          "name": "ปลาเก๋า",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลท่าเรือ",
+            "แม่น้ำเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        },
+        {
+          "name": "ปลากระเบนยักษ์",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish29.jpg",
+          "area": [
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "วันที่ 15 -28",
+            "12:00 - 18:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        },
+        {
+          "name": "ปลาสิงโต",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish46.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลป่า"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
+        },
+        {
+          "name": "ปลาการ์ตูน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish7.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลาปักเป้ากล่อง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish67.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "12:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
+        },
+        {
+          "name": "ปลากระโทงดาบ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish20.jpg",
+          "area": [
+            "ทะเลท่าเรือ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 210,
+          "tier1": 242,
+          "tier2": 273,
+          "tier3": 315,
+          "tier4": 420
+        },
+        {
+          "name": "ปลาสากใหญ่",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
+        },
+        {
+          "name": "ปลากะพงขาว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish57.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "แมงกะพรุน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish41.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Rare",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        }
+      ]
+    },
+    {
+      "season": "ฤดูใบไม้ร่วง",
+      "data": [
+        {
+          "name": "ปลาแซลมอน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาชะโด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish28.jpg",
+          "area": [
+            "แม่น้ำป่า",
+            "แม่น้ำเมือง"
+          ],
+          "time": [
+            "06:00 - 12:00",
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        },
+        {
+          "name": "ปลาอโรวานาแดง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish42.jpg",
+          "area": [
+            "เหมืองทั้งสี่"
+          ],
+          "time": [
+            "วันที่ 22-28",
+            "12:00 - 18:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ",
+            "ลม"
+          ],
+          "rarity": "Legendary",
+          "price": 620,
+          "tier1": 713,
+          "tier2": 806,
+          "tier3": 930,
+          "tier4": 1240
+        },
+        {
+          "name": "ปลาหมูอินโดลายเสือ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish23.jpg",
+          "area": [
+            "บ่อน้ำ",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
+        },
+        {
+          "name": "ปลาทอง",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish33.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำป่า",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
+        },
+        {
+          "name": "ปลาช่อน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish9.jpg",
+          "area": [
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "06:00 - 12:00",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาช่อนแอมะซอน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish45.jpg",
+          "area": [
+            "แม่น้ำป่า"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ปลาหมึก",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish13.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "หมึกสาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 85,
+          "tier1": 98,
+          "tier2": 111,
+          "tier3": 128,
+          "tier4": 170
+        },
+        {
+          "name": "ปลาเก๋า",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
+          "area": [
+            "ปากแม่น้ำ",
+            "ทะเลท่าเรือ",
+            "แม่น้ำเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
+        },
+        {
+          "name": "ปลานกแก้ว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
+          "area": [
+            "ทะเลชายหาด",
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "06:00 - 16:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Common",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
+        },
+        {
+          "name": "ปลาเสือพ่นน้ำ",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish74.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำในเหมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
+        },
+        {
+          "name": "ปลาค็อด",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish10.jpg",
+          "area": [
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "แจ่มใส",
+            "ลม"
+          ],
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
+        },
+        {
+          "name": "ปลาสากใหญ่",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
+          "area": [
+            "ทะเลท่าเรือ",
+            "ทะเลชายหาด"
+          ],
+          "time": [
+            "06:00 - 18:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
+        },
+        {
+          "name": "ปลากะพงยักษ์ทะเล",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish27.jpg",
+          "area": [
+            "ทะเลป่า"
+          ],
+          "time": [
+            "วันที่ 1-7",
+            "06:00 - 12:00",
+            "18:00 - 02:00"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        },
+        {
+          "name": "ปลาสเตอร์เจียน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "ทะเลสาบ"
+          ],
+          "time": [
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Rare",
+          "price": 240,
+          "tier1": 276,
+          "tier2": 312,
+          "tier3": 360,
+          "tier4": 480
+        },
+        {
+          "name": "ปลาแซลมอนช็อกอาย",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish11.jpg",
+          "area": [
+            "แม่น้ำฟาร์ม",
+            "แม่น้ำเมือง"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Uncommon",
+          "price": 80,
+          "tier1": 92,
+          "tier2": 104,
+          "tier3": 120,
+          "tier4": 160
+        },
+        {
+          "name": "ปลากะพงขาว",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish57.jpg",
+          "area": [
+            "แม่น้ำเมือง",
+            "ปากแม่น้ำ"
+          ],
+          "time": [
+            "ทั้งวัน"
+          ],
+          "weather": [
+            "ทุกสภาพอากาศ"
+          ],
+          "rarity": "Rare",
+          "price": 175,
+          "tier1": 201,
+          "tier2": 228,
+          "tier3": 263,
+          "tier4": 350
+        },
+        {
+          "name": "ฉลามหัวค้อน",
+          "image_url": "https://img.online-station.net/image_content/2024/08/fish39.jpg",
+          "area": [
+            "ทะเลประภาคาร"
+          ],
+          "time": [
+            "วันที่ 8-21",
+            "06:00 - 12:00",
+            "16:00 - 02:00"
+          ],
+          "weather": [
+            "ฝน",
+            "พายุ"
+          ],
+          "rarity": "Legendary",
+          "price": 845,
+          "tier1": 972,
+          "tier2": 1099,
+          "tier3": 1268,
+          "tier4": 1690
+        }
+      ]
+    }
+  ]
+}

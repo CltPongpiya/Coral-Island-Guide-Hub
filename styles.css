@@ -1,0 +1,274 @@
+:root {
+	--bg: #0f172a;
+	--panel: #111827;
+	--muted: #94a3b8;
+	--text: #e5e7eb;
+	--accent: #22d3ee;
+	--accent-2: #a78bfa;
+	--border: #1f2937;
+	--card: #0b1220;
+	--tag: #1e293b;
+	--tag-text: #cbd5e1;
+	--danger: #ef4444;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(1200px 1200px at 10% -20%, rgba(34, 211, 238, 0.15), transparent 40%),
+		radial-gradient(900px 900px at 150% 10%, rgba(167, 139, 250, 0.12), transparent 40%),
+		var(--bg);
+	color: var(--text);
+	font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+header h1 {
+	margin: 8px 0 0 0;
+	font-size: 28px;
+}
+header .subtitle {
+	margin: 4px 0 0 0;
+	color: var(--muted);
+	font-size: 14px;
+}
+
+.filters {
+	background: rgba(17, 24, 39, 0.6);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	backdrop-filter: blur(4px);
+}
+.filter-row {
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	gap: 12px;
+	align-items: center;
+	margin-bottom: 12px;
+}
+.filter-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+}
+.filter-col {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+label {
+	font-size: 13px;
+	color: var(--muted);
+}
+input[type="search"],
+input[type="number"],
+select {
+	width: 100%;
+	padding: 10px 12px;
+	border-radius: 10px;
+	border: 1px solid var(--border);
+	background: var(--panel);
+	color: var(--text);
+	outline: none;
+}
+select[multiple] {
+	height: auto;
+	min-height: 120px;
+}
+/* dropdown แบบ single ไม่ต้องสูง */
+select:not([multiple]) {
+	min-height: unset;
+}
+.range-row {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 8px;
+	align-items: center;
+}
+.filter-actions {
+	display: flex;
+	gap: 8px;
+	margin-top: 12px;
+}
+button {
+	padding: 10px 14px;
+	border-radius: 10px;
+	border: 1px solid var(--border);
+	background: linear-gradient(120deg, rgba(34, 211, 238, 0.2), rgba(167, 139, 250, 0.2));
+	color: var(--text);
+	cursor: pointer;
+}
+button.secondary {
+	background: transparent;
+}
+.helper-text {
+	color: var(--muted);
+	font-size: 12px;
+	margin: 8px 0 0 0;
+}
+
+.summary-bar {
+	margin-top: 12px;
+	margin-bottom: 8px;
+	color: var(--muted);
+	font-size: 14px;
+}
+
+.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	background: rgba(17, 24, 39, 0.4);
+}
+
+.fish-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* ✅ ให้แต่ละคอลัมน์กว้างเท่า ๆ กัน */
+}
+.fish-table thead th {
+	text-align: left;
+	font-weight: 600;
+	color: var(--muted);
+	padding: 12px;
+	border-bottom: 1px solid var(--border);
+	background: rgba(2, 6, 23, 0.4);
+}
+.fish-table tbody td {
+  padding: 12px;
+  /* ยกเลิกเส้นขอบที่ td */
+  border-bottom: 0;
+  vertical-align: middle;
+}
+
+.fish-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.fish-table tbody tr:last-child {
+  border-bottom: 0;
+}
+.fish-table tbody tr:hover {
+	background: rgba(34, 211, 238, 0.06);
+}
+.col-fish { width: 32%; }
+.col-area { width: 28%; }
+.col-time { width: 16%; text-align: center; }
+.col-weather { width: 16%; }
+.col-rarity { width: 10%; }
+.col-price { width: 10%; text-align: right; }
+.cell-fish {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.fish-img {
+	width: 72px;
+	height: 72px;
+	object-fit: contain;
+	background: var(--card);
+	border-radius: 8px;
+	border: 1px solid var(--border);
+}
+.fish-name {
+	font-size: 18px;
+}
+.rarity {
+	color: var(--accent);
+}
+.cell-price {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.sort-btn {
+	all: unset;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	color: var(--muted);
+}
+.sort-btn:hover {
+	background: rgba(34, 211, 238, 0.08);
+	color: var(--text);
+}
+.sort-icon::after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid var(--muted);
+	margin-left: 2px;
+	opacity: 0.6;
+}
+.sort-icon[data-state="desc"]::after {
+	border-top: 6px solid var(--text);
+	transform: rotate(180deg);
+}
+.sort-icon[data-state="asc"]::after {
+	border-top: 6px solid var(--text);
+	transform: rotate(0deg);
+}
+
+.empty {
+	margin: 24px 0;
+	color: var(--muted);
+	text-align: center;
+}
+.error {
+	margin: 24px 0;
+	padding: 16px;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	background: rgba(239, 68, 68, 0.08);
+	color: #fecaca;
+}
+
+.footer {
+	margin-top: 24px;
+	color: var(--muted);
+	font-size: 12px;
+	border-top: 1px solid var(--border);
+	padding-top: 12px;
+}
+
+/* ซ่อนคอลัมน์สภาพอากาศ (ทั้งหัวและเนื้อ) */
+.rarity {
+  font-weight: 600;
+}
+.rarity.legendary {
+  color: #facc15; /* เหลืองทอง */
+}
+.rarity.rare {
+  color: #60a5fa; /* น้ำเงินอ่อน */
+}
+.rarity.uncommon {
+  color: #34d399; /* เขียวมิ้นต์ */
+}
+.rarity.common {
+  color: #94a3b8; /* เทาอ่อน */
+}
+
+@media (max-width: 1024px) { }
+@media (max-width: 640px) {
+	.filter-row { grid-template-columns: 1fr; }
+	.filter-grid { grid-template-columns: 1fr; }
+}
+
+
