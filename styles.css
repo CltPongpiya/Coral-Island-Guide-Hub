@@ -33,14 +33,76 @@ html, body {
 	padding: 16px;
 }
 
+.page-header {
+	margin-bottom: 4px;
+}
+
+.filters-header {
+	position: sticky;
+	top: 0;
+	z-index: 40;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+	background: var(--bg);
+	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.8);
+}
+
+@media (max-width: 768px) {
+	.page-header {
+		padding-top: 6px;
+	}
+}
+
 header h1 {
-	margin: 8px 0 0 0;
+	margin: 4px 0 0 0;
 	font-size: 28px;
 }
+
+.site-title {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.site-logo {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	border-radius: 6px;
+	flex-shrink: 0;
+}
+
 header .subtitle {
 	margin: 4px 0 0 0;
 	color: var(--muted);
 	font-size: 14px;
+}
+
+.search-box {
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.search-box input[type="search"] {
+	width: 100%;
+	padding: 12px 16px;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	background: var(--panel);
+	color: var(--text);
+	outline: none;
+	font-size: 15px;
+	transition: all 0.2s ease;
+}
+
+.search-box input[type="search"]:focus {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
+}
+
+.search-box input[type="search"]::placeholder {
+	color: var(--muted);
 }
 
 .filters {
@@ -48,6 +110,8 @@ header .subtitle {
 	border: 1px solid var(--border);
 	border-radius: 12px;
 	backdrop-filter: blur(4px);
+	padding: 12px 16px;
+	margin-bottom: 12px;
 }
 .filter-row {
 	display: grid;
@@ -58,13 +122,14 @@ header .subtitle {
 }
 .filter-grid {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 12px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+	margin-bottom: 16px;
 }
 .filter-col {
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 8px;
 }
 label {
 	font-size: 13px;
@@ -97,8 +162,13 @@ select:not([multiple]) {
 }
 .filter-actions {
 	display: flex;
-	gap: 8px;
-	margin-top: 12px;
+	gap: 10px;
+	margin-top: 0;
+	justify-content: flex-end;
+}
+
+.filter-actions:has(button:only-child) {
+	justify-content: flex-end;
 }
 button {
 	padding: 10px 14px;
@@ -118,10 +188,54 @@ button.secondary {
 }
 
 .summary-bar {
-	margin-top: 12px;
-	margin-bottom: 8px;
+	margin-top: 0;
+	margin-bottom: 12px;
 	color: var(--muted);
 	font-size: 14px;
+	font-weight: 500;
+}
+
+.filter-titles {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+	margin-bottom: 6px;
+}
+
+.filter-title {
+	font-size: 13px;
+	color: var(--muted);
+	font-weight: 500;
+}
+
+.season-tabs {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 14px;
+	flex-wrap: wrap;
+}
+
+.season-tab {
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: 1px solid var(--border);
+	background: var(--panel);
+	color: var(--text);
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.season-tab:hover {
+	background: rgba(34, 211, 238, 0.1);
+	border-color: var(--accent);
+}
+
+.season-tab.active {
+	background: linear-gradient(120deg, rgba(34, 211, 238, 0.3), rgba(167, 139, 250, 0.3));
+	border-color: var(--accent);
+	color: var(--accent);
+	font-weight: 600;
 }
 
 .table-wrapper {
@@ -135,19 +249,25 @@ button.secondary {
 .fish-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* ✅ ให้แต่ละคอลัมน์กว้างเท่า ๆ กัน */
+  table-layout: fixed;
 }
 .fish-table thead th {
 	text-align: left;
 	font-weight: 600;
 	color: var(--muted);
-	padding: 12px;
+	padding: 14px 16px;
 	border-bottom: 1px solid var(--border);
 	background: rgba(2, 6, 23, 0.4);
+	font-size: 13px;
+}
+.fish-table thead th.col-time {
+	text-align: center;
+}
+.fish-table thead th.col-price {
+	text-align: right;
 }
 .fish-table tbody td {
-  padding: 12px;
-  /* ยกเลิกเส้นขอบที่ td */
+  padding: 14px 16px;
   border-bottom: 0;
   vertical-align: middle;
 }
@@ -162,34 +282,83 @@ button.secondary {
 .fish-table tbody tr:hover {
 	background: rgba(34, 211, 238, 0.06);
 }
-.col-fish { width: 32%; }
-.col-area { width: 28%; }
-.col-time { width: 16%; text-align: center; }
-.col-weather { width: 16%; }
+.col-fish { width: 22%; }
+.col-area { width: 10%; }
+.col-time { width: 19%; text-align: center; }
+.col-weather { width: 19%; }
 .col-rarity { width: 10%; }
-.col-price { width: 10%; text-align: right; }
+.col-price { width: 11%; text-align: right; }
 .cell-fish {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 14px;
 }
 .fish-img {
-	width: 72px;
-	height: 72px;
+	width: 64px;
+	height: 64px;
 	object-fit: contain;
 	background: var(--card);
 	border-radius: 8px;
 	border: 1px solid var(--border);
+	flex-shrink: 0;
 }
 .fish-name {
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.all-season-tag {
+	display: inline-block !important;
+	padding: 4px 12px;
+	background: rgba(34, 211, 238, 0.15);
+	border: 1.5px solid var(--accent);
+	border-radius: 6px;
+	color: var(--accent);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	white-space: nowrap;
+	margin-left: 0;
+	vertical-align: middle;
+	line-height: 1.2;
+	box-shadow: 0 2px 4px rgba(34, 211, 238, 0.2);
 }
 .rarity {
 	color: var(--accent);
 }
+.cell-area {
+	line-height: 1.6;
+	font-size: 14px;
+}
+.cell-time {
+	text-align: center;
+	line-height: 1.6;
+	font-size: 14px;
+}
+.cell-weather {
+	line-height: 1.6;
+	font-size: 14px;
+}
+.cell-rarity {
+	font-size: 14px;
+}
 .cell-price {
 	text-align: right;
 	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.sort-controls {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
 }
 
 .sort-btn {
@@ -197,14 +366,19 @@ button.secondary {
 	display: inline-flex;
 	align-items: center;
 	gap: 6px;
-	padding: 6px 8px;
-	border-radius: 8px;
+	padding: 10px 14px;
+	border-radius: 10px;
+	border: 1px solid var(--border);
+	background: var(--panel);
 	cursor: pointer;
-	color: var(--muted);
+	color: var(--text);
+	font-size: 14px;
+	transition: all 0.2s ease;
 }
 .sort-btn:hover {
-	background: rgba(34, 211, 238, 0.08);
-	color: var(--text);
+	background: rgba(34, 211, 238, 0.1);
+	border-color: var(--accent);
+	color: var(--accent);
 }
 .sort-icon::after {
 	content: '';
@@ -265,10 +439,581 @@ button.secondary {
   color: #94a3b8; /* เทาอ่อน */
 }
 
-@media (max-width: 1024px) { }
+.tooltip-trigger {
+	cursor: help;
+	position: relative;
+}
+
+.price-tooltip {
+	position: absolute;
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 6px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(34, 211, 238, 0.1);
+	z-index: 1000;
+	min-width: 80px;
+	max-width: 160px;
+	pointer-events: none;
+	backdrop-filter: blur(8px);
+}
+
+.tooltip-tiers {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.tier-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 8px;
+	background: var(--card);
+	border-radius: 8px;
+	border: 1px solid var(--border);
+	transition: all 0.2s ease;
+}
+
+.tier-item:hover {
+	background: rgba(34, 211, 238, 0.08);
+	border-color: var(--accent);
+}
+
+.tier-label {
+	color: var(--muted);
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+}
+
+.tier-value {
+	color: var(--accent);
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.coin-icon {
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
+	vertical-align: -1px;
+	margin-right: 4px;
+	display: inline-block;
+}
+
+/* บังคับให้ไอคอนใน tooltip แสดงผลตามขนาดที่ตั้งไว้ */
+.price-tooltip .coin-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.fish-row {
+	transition: background-color 0.2s ease;
+}
+
+.fish-row:hover {
+	background: rgba(34, 211, 238, 0.06);
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: 20px 16px;
+	}
+	
+	header h1 {
+		font-size: 24px;
+	}
+	
+	.filters {
+		padding: 16px;
+	}
+	
+	.fish-table thead th,
+	.fish-table tbody td {
+		padding: 10px 12px;
+		font-size: 13px;
+	}
+	
+	.fish-img {
+		width: 56px;
+		height: 56px;
+	}
+	
+	.fish-name {
+		font-size: 14px;
+	}
+}
+
+/* Card View Styles */
+.cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 16px;
+}
+
+.table-wrapper {
+	display: none;
+}
+
+.fish-card {
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 16px;
+	margin-bottom: 12px;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.fish-card:hover {
+	background: rgba(34, 211, 238, 0.06);
+	border-color: var(--accent);
+}
+
+.map-tag-btn {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+	padding: 6px 12px;
+	background: linear-gradient(120deg, rgba(34, 211, 238, 0.2), rgba(167, 139, 250, 0.2));
+	border: 1px solid var(--accent);
+	border-radius: 8px;
+	color: var(--accent);
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	z-index: 10;
+}
+
+.map-tag-btn:hover {
+	background: linear-gradient(120deg, rgba(34, 211, 238, 0.3), rgba(167, 139, 250, 0.3));
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(34, 211, 238, 0.3);
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--border);
+}
+
+.card-fish-img {
+	width: 64px;
+	height: 64px;
+	object-fit: contain;
+	background: var(--card);
+	border-radius: 8px;
+	border: 1px solid var(--border);
+	flex-shrink: 0;
+}
+
+.card-title {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.card-name {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--text);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.card-price {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--accent);
+	text-align: right;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card-info {
+	display: flex;
+	gap: 8px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.card-info strong {
+	color: var(--muted);
+	font-weight: 500;
+	min-width: 90px;
+}
+
+.card-info span {
+	color: var(--text);
+	line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 16px 12px;
+	}
+	
+	header {
+		margin-bottom: 20px;
+	}
+	
+	header h1 {
+		font-size: 22px;
+	}
+	
+	header .subtitle {
+		font-size: 13px;
+	}
+	
+	.search-box {
+		margin-bottom: 16px;
+	}
+	
+	.search-box input[type="search"] {
+		padding: 10px 14px;
+		font-size: 14px;
+	}
+	
+	.filters {
+		padding: 12px;
+		margin-bottom: 10px;
+	}
+	
+	.filter-titles {
+		grid-template-columns: 1fr;
+		gap: 4px;
+		margin-bottom: 6px;
+	}
+	
+	.filter-title {
+		font-size: 12px;
+	}
+	
+	.season-tabs {
+		gap: 6px;
+		margin-bottom: 10px;
+	}
+	
+	#weatherTabs.season-tabs {
+		margin-top: 2px;
+	}
+
+	.filter-grid {
+		gap: 12px;
+		margin-bottom: 12px;
+	}
+	
+	.filter-actions {
+		flex-direction: column;
+	}
+	
+	.filter-actions button {
+		width: 100%;
+	}
+	
+	.summary-bar {
+		margin-bottom: 12px;
+		font-size: 13px;
+	}
+	
+	.season-tabs {
+		gap: 6px;
+		margin-bottom: 12px;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 4px;
+	}
+	
+	.season-tabs::-webkit-scrollbar {
+		height: 4px;
+	}
+	
+	.season-tab {
+		padding: 8px 14px;
+		font-size: 13px;
+		white-space: nowrap;
+		flex-shrink: 0;
+	}
+	
+	/* Card view สำหรับ mobile - ใช้ single column */
+	.cards-wrapper {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+}
+
 @media (max-width: 640px) {
-	.filter-row { grid-template-columns: 1fr; }
-	.filter-grid { grid-template-columns: 1fr; }
+	.container {
+		padding: 12px 10px;
+	}
+	
+	header {
+		margin-bottom: 16px;
+		padding-bottom: 12px;
+	}
+	
+	header h1 {
+		font-size: 20px;
+	}
+	
+	header .subtitle {
+		font-size: 12px;
+	}
+	
+	.search-box {
+		margin-bottom: 12px;
+	}
+	
+	.search-box input[type="search"] {
+		padding: 10px 12px;
+		font-size: 14px;
+	}
+	
+	.filters {
+		padding: 12px;
+		margin-bottom: 12px;
+	}
+
+	/* จำกัด tooltip บนมือถือไม่ให้ล้นจอ */
+	.price-tooltip {
+		max-width: 70vw;
+	}
+	
+	.filter-row { 
+		grid-template-columns: 1fr; 
+	}
+	
+	.filter-grid { 
+		grid-template-columns: 1fr; 
+		gap: 12px;
+		margin-bottom: 12px;
+	}
+	
+	.filter-col {
+		gap: 6px;
+	}
+	
+	label {
+		font-size: 12px;
+	}
+	
+	input[type="search"],
+	input[type="number"],
+	select {
+		padding: 10px 12px;
+		font-size: 14px;
+	}
+	
+	.filter-actions {
+		gap: 8px;
+		margin-top: 0;
+	}
+	
+	button {
+		padding: 10px 14px;
+		font-size: 13px;
+	}
+	
+	.summary-bar {
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+	
+	.season-tabs {
+		gap: 6px;
+		margin-bottom: 12px;
+		padding: 3px;
+	}
+	
+	.season-tab {
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+	
+	/* Card view สำหรับมือถือ */
+	.fish-card {
+		padding: 14px;
+		margin-bottom: 10px;
+	}
+	
+	.card-header {
+		gap: 10px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.card-fish-img {
+		width: 56px;
+		height: 56px;
+	}
+	
+	.card-name {
+		font-size: 15px;
+	}
+	
+	.card-price {
+		font-size: 15px;
+	}
+	
+	.card-body {
+		gap: 6px;
+	}
+	
+	.card-info {
+		font-size: 13px;
+	}
+	
+	.card-info strong {
+		min-width: 80px;
+		font-size: 12px;
+	}
+	
+	.cards-wrapper {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	
+	.footer {
+		margin-top: 20px;
+		padding-top: 12px;
+		font-size: 11px;
+	}
+}
+
+/* Map Modal */
+.map-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.map-modal[hidden] {
+	display: none !important;
+}
+
+.map-modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(4px);
+}
+
+.map-modal-content {
+	position: relative;
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	max-width: 90vw;
+	max-height: 90vh;
+	overflow: hidden;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.map-modal-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 36px;
+	height: 36px;
+	border: none;
+	background: rgba(0, 0, 0, 0.5);
+	color: var(--text);
+	font-size: 24px;
+	line-height: 1;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+	z-index: 10;
+}
+
+.map-modal-close:hover {
+	background: rgba(239, 68, 68, 0.6);
+	transform: scale(1.1);
+}
+
+.map-image {
+	max-width: 100%;
+	max-height: 90vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.map-modal {
+		padding: 10px;
+	}
+	
+	.map-modal-content {
+		max-width: 100%;
+		max-height: 95vh;
+		border-radius: 12px;
+	}
+	
+	.map-modal-close {
+		top: 12px;
+		right: 12px;
+		width: 32px;
+		height: 32px;
+		font-size: 20px;
+	}
+	
+	.map-image {
+		max-height: 95vh;
+	}
+}
+
+@media (max-width: 640px) {
+	.map-modal {
+		padding: 5px;
+	}
+	
+	.map-modal-content {
+		border-radius: 8px;
+	}
+	
+	.map-modal-close {
+		top: 8px;
+		right: 8px;
+		width: 28px;
+		height: 28px;
+		font-size: 18px;
+	}
 }
 
 

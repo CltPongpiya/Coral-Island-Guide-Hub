@@ -17,15 +17,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 80,
+          "tier1": 92,
+          "tier2": 104,
+          "tier3": 120,
+          "tier4": 160
         },
         {
           "name": "ปลานิล",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish26.jpg",
           "area": [
-            "บ่อน้ำ",
-            "ทะเลสาบ (ฤดูใบไม้ผลิ/ฤดูหนาว)",
-            "เหมืองดิน (ฤดูร้อน/ฤดูใบไม้ร่วง)"
+            "บ่อน้ำ, ทะเลสาบ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -33,14 +36,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
         },
         {
           "name": "เครย์ฟิช",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish14.jpg",
           "area": [
-            "บ่อน้ำ",
-            "แม่น้ำฟาร์ม"
+            "บ่อน้ำ, แม่น้ำฟาร์ม"
           ],
           "time": [
             "ทั้งวัน"
@@ -48,36 +55,39 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
         },
         {
           "name": "ปลาไหลน้ำจืด",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish21.jpg",
           "area": [
-            "เหมืองน้ำ (ฤดูหนาว)",
-            "",
-            "",
-            "แม่น้ำฟาร์ม",
-            "ปากแม่น้ำ (ยกเว้นฤดูหนาว)"
+            "เหมืองน้ำ (ฤดูหนาว)(ทั้งวัน)",
+            "ปากแม่น้ำ (ยกเว้นฤดูหนาว)",
+            "แม่น้ำฟาร์ม"
           ],
           "time": [
-            "ทั้งวัน",
-            "",
-            "",
             "12:00 - 00:50"
           ],
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
         },
         {
           "name": "ปลาม้าลาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish40.jpg",
           "area": [
-            "ทุ่งนา",
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำป่า (ฤดูใบไม้ผลิ)"
+            "ทุ่งนา, แม่น้ำฟาร์ม, แม่น้ำป่า"
           ],
           "time": [
             "ทั้งวัน"
@@ -85,7 +95,12 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
         },
         {
           "name": "ปลาเทราท์สีน้ำตาล",
@@ -99,34 +114,39 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
         },
         {
           "name": "ปลาช่อนทะเล",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish8.jpg",
           "area": [
-            "ปากแม่น้ำ",
             "ทะเลท่าเรือ (ยกเว้นฤดูหนาว)",
-            "",
-            "เหมืองน้ำ (ฤดูหนาว)"
+            "เหมืองน้ำ (ฤดูหนาว)(ทั้งวัน)",
+            "ปากแม่น้ำ"
           ],
           "time": [
-            "06:00 - 16:00",
-            "",
-            "",
-            "ทั้งวัน"
+            "06:00 - 16:00"
           ],
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 95,
+          "tier1": 109,
+          "tier2": 124,
+          "tier3": 143,
+          "tier4": 190
         },
         {
           "name": "ปลากบ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish22.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลประภาคาร"
+            "ปากแม่น้ำ, ทะเลประภาคาร"
           ],
           "time": [
             "ทั้งวัน"
@@ -137,14 +157,18 @@
             "หิมะ",
             "พายุหิมะ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
         },
         {
           "name": "ปลาหางเหลือง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish37.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "เหมืองไฟ (น้ำปกติ)"
+            "ทะเลท่าเรือ, เหมืองไฟ"
           ],
           "time": [
             "ทั้งวัน"
@@ -156,22 +180,23 @@
             "พายุหิมะ",
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 55,
+          "tier1": 63,
+          "tier2": 72,
+          "tier3": 83,
+          "tier4": 110
         },
         {
           "name": "ปลาทูน่า",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish30.jpg",
           "area": [
+            "เหมืองไฟ (ทั้งวัน)",
             "ทะเลท่าเรือ",
-            "ทะเลประภาคาร (ฤดูใบไม้ร่วง)",
-            "",
-            "เหมืองไฟ (น้ำปกติ)"
+            "ทะเลประภาคาร"
           ],
           "time": [
-            "12:00 - 18:00",
-            "",
-            "",
-            "ทั้งวัน"
+            "12:00 - 18:00"
           ],
           "weather": [
             "ทุกสภาพอากาศ"
@@ -187,28 +212,28 @@
           "name": "ปลาปักเป้า",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish66.jpg",
           "area": [
-            "ทะเลท่าเรือ",
             "ทะเลประภาคาร (ฤดูหนาว)",
-            "",
-            "เหมืองลม (ทุกฤดู)"
+            "เหมืองลม (ทั้งวัน)",
+            "ทะเลท่าเรือ"
           ],
           "time": [
-            "06:00 - 16:00",
-            "",
-            "",
-            "ทั้งวัน"
+            "06:00 - 16:00"
           ],
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
         },
         {
           "name": "ปลาทับทิม",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish56.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "แม่น้ำในเหมือง"
+            "ทะเลชายหาด, แม่น้ำในเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -216,14 +241,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
         },
         {
           "name": "ปลากะพงแดง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish62.jpg",
           "area": [
-            "ทะเลท่าเรือ (ฤดูใบไม้ผลิ/ฤดูหนาว)",
-            "เหมืองลม (ทุกฤดู)"
+            "ทะเลท่าเรือ, เหมืองลม"
           ],
           "time": [
             "ทั้งวัน"
@@ -231,7 +260,12 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
         },
         {
           "name": "ปลิงทะเล",
@@ -267,7 +301,12 @@
             "หิมะ",
             "พายุหิมะ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 80,
+          "tier1": 92,
+          "tier2": 104,
+          "tier3": 120,
+          "tier4": 160
         },
         {
           "name": "ปลาเฟมแบค แองเจิล",
@@ -284,7 +323,12 @@
             "หิมะ",
             "พายุหิมะ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 60,
+          "tier1": 69,
+          "tier2": 78,
+          "tier3": 90,
+          "tier4": 120
         },
         {
           "name": "กุ้งล็อบสเตอร์",
@@ -298,7 +342,12 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 115,
+          "tier1": 132,
+          "tier2": 150,
+          "tier3": 173,
+          "tier4": 230
         },
         {
           "name": "ปลาสลิดหิน",
@@ -314,7 +363,12 @@
             "ลม",
             "หิมะ"
           ],
-          "rarity": "Rare"
+          "rarity": "Rare",
+          "price": 140,
+          "tier1": 161,
+          "tier2": 182,
+          "tier3": 210,
+          "tier4": 280
         },
         {
           "name": "ปลาแมนดาริน",
@@ -330,7 +384,12 @@
             "ลม",
             "หิมะ"
           ],
-          "rarity": "Rare"
+          "rarity": "Rare",
+          "price": 140,
+          "tier1": 161,
+          "tier2": 182,
+          "tier3": 210,
+          "tier4": 280
         },
         {
           "name": "ปลาเทวดา",
@@ -344,14 +403,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
         },
         {
           "name": "ปลาบลูแทงค์",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish61.jpg",
           "area": [
-            "ทะเลชายหาด (ยกเว้นฤดูร้อน)",
-            "เหมืองดิน (ทุกฤดู)"
+            "ทะเลชายหาด, เหมืองดิน"
           ],
           "time": [
             "ทั้งวัน"
@@ -359,7 +422,12 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 40,
+          "tier1": 46,
+          "tier2": 52,
+          "tier3": 60,
+          "tier4": 80
         },
         {
           "name": "ปลาไฟร์ฟิช",
@@ -373,15 +441,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
         },
         {
           "name": "ปลาแมกเคอเรล",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish49.jpg",
           "area": [
-            "ทะเลป่า",
-            "ทะเลประภาคาร",
-            "เหมืองไฟ (ลาวา)"
+            "ทะเลป่า, ทะเลประภาคาร, เหมืองไฟ"
           ],
           "time": [
             "ทั้งวัน"
@@ -389,15 +460,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
         },
         {
           "name": "ปู",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish12.jpg",
           "area": [
-            "ทุ่งนา",
-            "แม่น้ำป่า",
-            "ทะเลประภาคาร"
+            "ทุ่งนา, แม่น้ำป่า, ทะเลประภาคาร"
           ],
           "time": [
             "ทั้งวัน"
@@ -405,15 +479,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Uncommon"
+          "rarity": "Uncommon",
+          "price": 70,
+          "tier1": 81,
+          "tier2": 91,
+          "tier3": 105,
+          "tier4": 140
         },
         {
           "name": "ปลาซาดีน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish63.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลประภาคาร (ฤดูร้อน/ฤดูใบไม้ร่วง)",
-            "เหมืองไฟ (ลาวา/ทุกฤดู)"
+            "ทะเลชายหาด, ทะเลประภาคาร, เหมืองไฟ"
           ],
           "time": [
             "16:00 - 02:00"
@@ -421,15 +498,18 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 35,
+          "tier1": 40,
+          "tier2": 46,
+          "tier3": 53,
+          "tier4": 70
         },
         {
           "name": "ปลากระพงแดง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish52.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "ปากแม่น้ำ",
-            "ทะเลสาบ"
+            "แม่น้ำเมือง, ปากแม่น้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -437,7 +517,12 @@
           "weather": [
             "ทุกสภาพอากาศ"
           ],
-          "rarity": "Common"
+          "rarity": "Common",
+          "price": 45,
+          "tier1": 52,
+          "tier2": 59,
+          "tier3": 68,
+          "tier4": 90
         },
         {
           "name": "กุ้ง",
@@ -467,8 +552,7 @@
           "name": "ปลาชะโด",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish28.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "แม่น้ำป่า"
+            "แม่น้ำเมือง, แม่น้ำป่า"
           ],
           "time": [
             "06:00 - 12:00",
@@ -489,9 +573,7 @@
           "name": "ปลาดุก",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish4.jpg",
           "area": [
-            "ทุ่งนา",
-            "บ่อน้ำ",
-            "แม่น้ำป่า"
+            "ทุ่งนา, บ่อน้ำ, แม่น้ำป่า"
           ],
           "time": [
             "16:00 - 02:00"
@@ -511,9 +593,7 @@
           "name": "ปลาคาร์ฟ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish44.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "แม่น้ำในเหมือง",
-            "ทะเลสาบ"
+            "แม่น้ำเมือง, แม่น้ำในเหมือง, ทะเลสาบ"
           ],
           "time": [
             "06:00 - 16:00"
@@ -532,9 +612,7 @@
           "name": "ปลาทอง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish33.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำป่า",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, แม่น้ำป่า, ทะเลสาบ"
           ],
           "time": [
             "ทุกสภาพอากาศ"
@@ -575,9 +653,7 @@
           "name": "ปลาบลูกิล",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish64.jpg",
           "area": [
-            "บ่อน้ำ",
-            "แม่น้ำเมือง",
-            "ทะเลสาบ"
+            "บ่อน้ำ, แม่น้ำเมือง, ทะเลสาบ"
           ],
           "time": [
             "12:00 - 02:00"
@@ -596,8 +672,7 @@
           "name": "ปลาโกลเดนการ์",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish31.jpg",
           "area": [
-            "แม่น้ำป่า",
-            "ทะเลสาบ"
+            "แม่น้ำป่า, ทะเลสาบ"
           ],
           "time": [
             "06:00 - 16:00"
@@ -617,9 +692,7 @@
           "name": "ปลาหางเสือ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish5.jpg",
           "area": [
-            "แม่น้ำป่า",
-            "แม่น้ำเมือง",
-            "ทะเลสาบ"
+            "แม่น้ำป่า, แม่น้ำเมือง, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -677,8 +750,7 @@
           "name": "หมึกสาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "16:00 - 02:00"
@@ -697,9 +769,7 @@
           "name": "ปลาเก๋า",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลท่าเรือ",
-            "แม่น้ำเหมือง"
+            "ปากแม่น้ำ, ทะเลท่าเรือ, แม่น้ำเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -718,8 +788,7 @@
           "name": "ปลานกแก้ว",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลประภาคาร"
+            "ทะเลชายหาด, ทะเลประภาคาร"
           ],
           "time": [
             "06:00 - 16:00"
@@ -759,8 +828,7 @@
           "name": "ปลาสิงโต",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish46.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลป่า"
+            "ทะเลชายหาด, ทะเลป่า"
           ],
           "time": [
             "06:00 - 18:00"
@@ -819,8 +887,7 @@
           "name": "ปลาสากใหญ่",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "06:00 - 18:00"
@@ -839,8 +906,7 @@
           "name": "ปลาสเตอร์เจียน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, ทะเลสาบ"
           ],
           "time": [
             "16:00 - 02:00"
@@ -909,8 +975,7 @@
           "name": "ปลาแซลมอน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลสาบ"
+            "ปากแม่น้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -988,9 +1053,7 @@
           "name": "ปลาหางเสือ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish5.jpg",
           "area": [
-            "แม่น้ำป่า",
-            "แม่น้ำเมือง",
-            "ทะเลสาบ"
+            "แม่น้ำป่า, แม่น้ำเมือง, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1009,8 +1072,7 @@
           "name": "ปลานกแก้ว",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลประภาคาร"
+            "ทะเลชายหาด, ทะเลประภาคาร"
           ],
           "time": [
             "06:00 - 16:00"
@@ -1029,8 +1091,7 @@
           "name": "ปลาเสือพ่นน้ำ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish74.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำในเหมือง"
+            "แม่น้ำฟาร์ม, แม่น้ำในเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -1087,8 +1148,7 @@
           "name": "ปลาทูน่าครีบเหลือง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish35.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "12:00 - 18:00"
@@ -1169,8 +1229,7 @@
           "name": "ปลาสเตอร์เจียน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, ทะเลสาบ"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1190,8 +1249,7 @@
           "name": "ปลาแซลมอนช็อกอาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish11.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลสาบ"
+            "ปากแม่น้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1237,8 +1295,7 @@
           "name": "ปลาแซลมอน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลสาบ"
+            "ปากแม่น้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1257,9 +1314,7 @@
           "name": "ปลาดุก",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish4.jpg",
           "area": [
-            "ทุ่งนา",
-            "บ่อน้ำ",
-            "แม่น้ำป่า"
+            "ทุ่งนา, บ่อน้ำ, แม่น้ำป่า"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1279,9 +1334,7 @@
           "name": "ปลาคาร์ฟ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish44.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "แม่น้ำในเหมือง",
-            "ทะเลสาบ"
+            "แม่น้ำเมือง, แม่น้ำในเหมือง, ทะเลสาบ"
           ],
           "time": [
             "06:00 - 16:00"
@@ -1300,9 +1353,7 @@
           "name": "ปลาแบล็คโกสต์",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish60.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำเมือง",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, แม่น้ำเมือง, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1322,8 +1373,7 @@
           "name": "ปลาจระเข้",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish24.jpg",
           "area": [
-            "แม่น้ำป่า",
-            "ทะเลสาบ"
+            "แม่น้ำป่า, ทะเลสาบ"
           ],
           "time": [
             "06:00 - 16:00"
@@ -1424,8 +1474,7 @@
           "name": "หมึกสาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1444,9 +1493,7 @@
           "name": "ปลาเก๋า",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลท่าเรือ",
-            "แม่น้ำเหมือง"
+            "ปากแม่น้ำ, ทะเลท่าเรือ, แม่น้ำเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -1486,8 +1533,7 @@
           "name": "ปลาสิงโต",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish46.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลป่า"
+            "ทะเลชายหาด, ทะเลป่า"
           ],
           "time": [
             "06:00 - 18:00"
@@ -1564,8 +1610,7 @@
           "name": "ปลาสากใหญ่",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "06:00 - 18:00"
@@ -1584,8 +1629,7 @@
           "name": "ปลากะพงขาว",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish57.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "ปากแม่น้ำ"
+            "แม่น้ำเมือง, ปากแม่น้ำ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1604,8 +1648,7 @@
           "name": "แมงกะพรุน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish41.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลประภาคาร"
+            "ทะเลชายหาด, ทะเลประภาคาร"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1630,8 +1673,7 @@
           "name": "ปลาแซลมอน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish59.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลสาบ"
+            "ปากแม่น้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1650,8 +1692,7 @@
           "name": "ปลาชะโด",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish28.jpg",
           "area": [
-            "แม่น้ำป่า",
-            "แม่น้ำเมือง"
+            "แม่น้ำป่า, แม่น้ำเมือง"
           ],
           "time": [
             "06:00 - 12:00",
@@ -1694,8 +1735,7 @@
           "name": "ปลาหมูอินโดลายเสือ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish23.jpg",
           "area": [
-            "บ่อน้ำ",
-            "ทะเลสาบ"
+            "บ่อน้ำ, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1715,9 +1755,7 @@
           "name": "ปลาทอง",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish33.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำป่า",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, แม่น้ำป่า, ทะเลสาบ"
           ],
           "time": [
             "ทั้งวัน"
@@ -1796,8 +1834,7 @@
           "name": "หมึกสาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish55.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1816,9 +1853,7 @@
           "name": "ปลาเก๋า",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish38.jpg",
           "area": [
-            "ปากแม่น้ำ",
-            "ทะเลท่าเรือ",
-            "แม่น้ำเหมือง"
+            "ปากแม่น้ำ, ทะเลท่าเรือ, แม่น้ำเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -1837,8 +1872,7 @@
           "name": "ปลานกแก้ว",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish58.jpg",
           "area": [
-            "ทะเลชายหาด",
-            "ทะเลประภาคาร"
+            "ทะเลชายหาด, ทะเลประภาคาร"
           ],
           "time": [
             "06:00 - 16:00"
@@ -1857,8 +1891,7 @@
           "name": "ปลาเสือพ่นน้ำ",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish74.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำในเหมือง"
+            "แม่น้ำฟาร์ม, แม่น้ำในเหมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -1897,8 +1930,7 @@
           "name": "ปลาสากใหญ่",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish53.jpg",
           "area": [
-            "ทะเลท่าเรือ",
-            "ทะเลชายหาด"
+            "ทะเลท่าเรือ, ทะเลชายหาด"
           ],
           "time": [
             "06:00 - 18:00"
@@ -1938,8 +1970,7 @@
           "name": "ปลาสเตอร์เจียน",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish16.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "ทะเลสาบ"
+            "แม่น้ำฟาร์ม, ทะเลสาบ"
           ],
           "time": [
             "16:00 - 02:00"
@@ -1959,8 +1990,7 @@
           "name": "ปลาแซลมอนช็อกอาย",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish11.jpg",
           "area": [
-            "แม่น้ำฟาร์ม",
-            "แม่น้ำเมือง"
+            "แม่น้ำฟาร์ม, แม่น้ำเมือง"
           ],
           "time": [
             "ทั้งวัน"
@@ -1979,8 +2009,7 @@
           "name": "ปลากะพงขาว",
           "image_url": "https://img.online-station.net/image_content/2024/08/fish57.jpg",
           "area": [
-            "แม่น้ำเมือง",
-            "ปากแม่น้ำ"
+            "แม่น้ำเมือง, ปากแม่น้ำ"
           ],
           "time": [
             "ทั้งวัน"
