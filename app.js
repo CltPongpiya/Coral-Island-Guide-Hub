@@ -10,19 +10,26 @@
 
 	// Elements
 	const fishTbodyEl = document.getElementById('fishTbody');
+	const cardsWrapperEl = document.getElementById('cardsWrapper');
 	const emptyStateEl = document.getElementById('emptyState');
 	const totalCountEl = document.getElementById('totalCount');
 
+	// Search
+	const searchInputEl = document.getElementById('searchInput');
+
 	// Filters
-	const seasonSelectEl = document.getElementById('seasonSelect');
+	let seasonSelectEl = null; // จะเปลี่ยนเป็น tab แทน
+	const seasonTabsEl = document.getElementById('seasonTabs');
 	const weatherSelectEl = document.getElementById('weatherSelect');
 	const areaSelectEl = document.getElementById('areaSelect');
-	const applyFiltersBtn = document.getElementById('applyFiltersBtn');
 	const resetFiltersBtn = document.getElementById('resetFiltersBtn');
 	const priceSortBtn = document.getElementById('priceSortBtn');
 	const priceSortIcon = document.getElementById('priceSortIcon');
 	const raritySortBtn = document.getElementById('raritySortBtn');
 	const raritySortIcon = document.getElementById('raritySortIcon');
+	
+	// Season state (แทน select value)
+	let selectedSeason = '';
 
 	// sort state: null | 'asc' | 'desc'
 	let priceSortDir = 'desc';   // เริ่มต้นราคาแพงสุดก่อน
@@ -108,10 +115,49 @@
 			});
 		}
 
-		ensureOptions(seasonSelectEl, uniqueStrings(items.map((i) => i.season)));
+		// สร้าง season tabs (กรอง "ตกได้ทุกฤดูกาล" ออก)
+		const allSeasons = uniqueStrings(items.map((i) => i.season));
+		const seasons = allSeasons.filter((s) => s && s !== 'ตกได้ทุกฤดูกาล');
+		if (seasonTabsEl) {
+			// เพิ่ม tab แต่ละฤดูกาล
+			let isFirst = true;
+			seasons.forEach((season) => {
+				if (!season) return;
+				const tab = document.createElement('button');
+				tab.className = isFirst ? 'season-tab active' : 'season-tab';
+				tab.dataset.season = season;
+				tab.textContent = season;
+				tab.addEventListener('click', () => {
+					selectedSeason = season;
+					updateSeasonTabs();
+					applyFilters();
+				});
+				seasonTabsEl.appendChild(tab);
+				if (isFirst) {
+					selectedSeason = season;
+					isFirst = false;
+				}
+			});
+		}
+
 		ensureOptions(weatherSelectEl, uniqueStrings(items.map((i) => i.weather)));
 		ensureOptions(areaSelectEl, uniqueStrings(items.map((i) => i.area)));
 	}
+	
+	function updateSeasonTabs() {
+		if (!seasonTabsEl) return;
+		const tabs = seasonTabsEl.querySelectorAll('.season-tab');
+		tabs.forEach((tab) => {
+			if (tab.dataset.season === selectedSeason) {
+				tab.classList.add('active');
+			} else {
+				tab.classList.remove('active');
+			}
+		});
+	}
+
+	// เก็บ sorted items สำหรับ modal
+	let sortedItems = [];
 
 	function render() {
 		const items = currentItems.slice();
@@ -133,23 +179,38 @@
 			}
 			return 0;
 		});
+		sortedItems = items;
 		totalCountEl.textContent = String(items.length);
 		if (items.length === 0) {
 			fishTbodyEl.innerHTML = '';
+			if (cardsWrapperEl) cardsWrapperEl.innerHTML = '';
 			emptyStateEl.hidden = false;
 			return;
 		}
 		emptyStateEl.hidden = true;
-		const rows = items.map(renderRow).join('');
+		const rows = items.map((item, index) => renderRow(item, index)).join('');
 		fishTbodyEl.innerHTML = rows;
+		// Render cards สำหรับ mobile
+		if (cardsWrapperEl) {
+			const cards = items.map((item, index) => renderCard(item, index)).join('');
+			cardsWrapperEl.innerHTML = cards;
+		}
+		// เชื่อม event listeners สำหรับ tooltip
+		wireTooltips();
+		// เชื่อม event listeners สำหรับปุ่มแผนที่
+		wireMapButtons();
 	}
 
-	function renderRow(item) {
+	function renderRow(item, index) {
 		const name = escapeHtml(item.name || '-');
 		const rarity = escapeHtml(item.rarity || 'Unknown');
 		const rarityClass = String(item.rarity || '').toLowerCase();
 		const area = Array.isArray(item.area) ? item.area.map(escapeHtml).join(', ') : '-';
 		const weather = Array.isArray(item.weather) ? item.weather.map(escapeHtml).join(', ') : '-';
+		// ตรวจสอบว่าตกได้ทุกฤดูกาลหรือไม่
+		const seasons = Array.isArray(item.season) ? item.season : (item.season ? [item.season] : []);
+		const isAllSeason = seasons.some(s => String(s).trim() === 'ตกได้ทุกฤดูกาล');
+		const allSeasonTag = isAllSeason ? '<span class="all-season-tag">ตกได้ทุกฤดูกาล</span>' : '';
 		// เวลา: รองรับทั้งสตริงเดียวหรืออาเรย์ของสตริง แสดงแต่ละช่วงขึ้นบรรทัดใหม่
 		let areaHtml = '-';
 		let timeHtml = '-';
@@ -162,18 +223,66 @@
 		}
 		const imgSrc = item.image_url ? ` src="${escapeAttr(item.image_url)}"` : '';
 		const priceText = typeof item.price === 'number' ? `${item.price} ฿` : '-';
+		// เตรียมข้อมูลสำหรับ tooltip
+		const hasTierData = typeof item.tier1 === 'number' || typeof item.tier2 === 'number' || typeof item.tier3 === 'number' || typeof item.tier4 === 'number';
+		const priceCellAttrs = hasTierData ? ` class="cell-price tooltip-trigger" data-image="${escapeAttr(item.image_url || '')}" data-tier1="${item.tier1 || ''}" data-tier2="${item.tier2 || ''}" data-tier3="${item.tier3 || ''}" data-tier4="${item.tier4 || ''}"` : ' class="cell-price"';
+		// เก็บ index แทนการเก็บข้อมูลทั้งหมดใน attribute
 		return [
-			'<tr>',
+			`<tr class="fish-row" data-item-index="${index}">`,
 			'<td class="cell-fish">',
 			`<img class="fish-img"${imgSrc} alt="${escapeAttr(name)}" loading="lazy">`,
-			`<div class="fish-name">${name}</div>`,
+			`<div class="fish-name">${name}${allSeasonTag ? ' ' + allSeasonTag : ''}</div>`,
 			'</td>',
 			`<td class="cell-area">${areaHtml}</td>`,
 			`<td class="cell-time">${timeHtml}</td>`,
 			`<td class="cell-weather">${weather}</td>`,
 			`<td class="cell-rarity"><span class="rarity ${rarityClass}">${rarity}</span></td>`,
-			`<td class="cell-price">${priceText}</td>`,
+			`<td${priceCellAttrs}>${priceText}</td>`,
 			'</tr>'
+		].join('');
+	}
+
+	function renderCard(item, index) {
+		const name = escapeHtml(item.name || '-');
+		const rarity = escapeHtml(item.rarity || 'Unknown');
+		const rarityClass = String(item.rarity || '').toLowerCase();
+		const weather = Array.isArray(item.weather) ? item.weather.map(escapeHtml).join(', ') : '-';
+		// ตรวจสอบว่าตกได้ทุกฤดูกาลหรือไม่
+		const seasons = Array.isArray(item.season) ? item.season : (item.season ? [item.season] : []);
+		const isAllSeason = seasons.some(s => String(s).trim() === 'ตกได้ทุกฤดูกาล');
+		const allSeasonTag = isAllSeason ? '<span class="all-season-tag">ตกได้ทุกฤดูกาล</span>' : '';
+		// เวลาและจุดตกปลา: แสดงแต่ละรายการขึ้นบรรทัดใหม่
+		let areaHtml = '-';
+		let timeHtml = '-';
+		if (Array.isArray(item.area) && item.area.length > 0 || Array.isArray(item.time) && item.time.length > 0) {
+			areaHtml = item.area.map(escapeHtml).join('<br>');
+			timeHtml = item.time.map(escapeHtml).join('<br>');
+		} else if (typeof item.time === 'string' && item.time.trim() !== '') {
+			areaHtml = escapeHtml(item.area);
+			timeHtml = escapeHtml(item.time);
+		}
+		const price = typeof item.price === 'number' ? `${item.price} ฿` : '-';
+		const imgSrc = item.image_url ? ` src="${escapeAttr(item.image_url)}"` : '';
+		const hasTierData = typeof item.tier1 === 'number' || typeof item.tier2 === 'number' || typeof item.tier3 === 'number' || typeof item.tier4 === 'number';
+		const priceAttrs = hasTierData ? ` class="card-price tooltip-trigger" data-image="${escapeAttr(item.image_url || '')}" data-tier1="${item.tier1 || ''}" data-tier2="${item.tier2 || ''}" data-tier3="${item.tier3 || ''}" data-tier4="${item.tier4 || ''}"` : ' class="card-price"';
+		
+		return [
+			`<div class="fish-card" data-item-index="${index}">`,
+			'<div class="card-header">',
+			`<img class="card-fish-img"${imgSrc} alt="${escapeAttr(name)}" loading="lazy">`,
+			'<div class="card-title">',
+			`<h3 class="card-name">${name}${allSeasonTag ? ' ' + allSeasonTag : ''}</h3>`,
+			`<span class="rarity ${rarityClass}">${rarity}</span>`,
+			'</div>',
+			`<div${priceAttrs}>${price}</div>`,
+			'</div>',
+			'<div class="card-body">',
+			`<div class="card-info"><strong>จุดตกปลา:</strong> <span>${areaHtml}</span></div>`,
+			`<div class="card-info"><strong>เวลา:</strong> <span>${timeHtml}</span></div>`,
+			`<div class="card-info"><strong>สภาพอากาศ:</strong> <span>${weather}</span></div>`,
+			'</div>',
+			'<button class="map-tag-btn" data-action="show-map">แผนที่</button>',
+			'</div>'
 		].join('');
 	}
 
@@ -194,18 +303,28 @@
 	}
 
 	function applyFilters() {
-		const season = seasonSelectEl.value || '';
+		const season = selectedSeason;
 		const weather = weatherSelectEl.value || '';
 		const area = areaSelectEl.value || '';
+		const searchQuery = (searchInputEl?.value || '').trim().toLowerCase();
 
 		let filtered = allItems.filter((it) => {
+			// ค้นหาตามชื่อปลา
+			if (searchQuery) {
+				const name = String(it.name || '').toLowerCase();
+				if (!name.includes(searchQuery)) return false;
+			}
 			if (season) {
-				const has = Array.isArray(it.season) && it.season.includes(season);
-				if (!has) return false;
+				// รวมปลาที่มี season ตรงกับที่เลือก หรือ "ตกได้ทุกฤดูกาล"
+				const seasons = Array.isArray(it.season) ? it.season : [];
+				const hasSeason = seasons.includes(season) || seasons.includes('ตกได้ทุกฤดูกาล');
+				if (!hasSeason) return false;
 			}
 			if (weather) {
-				const has = Array.isArray(it.weather) && it.weather.includes(weather);
-				if (!has) return false;
+				// รวมปลาที่มี weather ตรงกับที่เลือก หรือ "ทุกสภาพอากาศ"
+				const weathers = Array.isArray(it.weather) ? it.weather : [];
+				const hasWeather = weathers.includes(weather) || weathers.includes('ทุกสภาพอากาศ');
+				if (!hasWeather) return false;
 			}
 			if (area) {
 				const has = Array.isArray(it.area) && it.area.includes(area);
@@ -249,20 +368,30 @@
 	}
 
 	function resetFilters() {
-		seasonSelectEl.value = '';
+		// เลือก tab แรกแทนการล้าง
+		if (seasonTabsEl) {
+			const firstTab = seasonTabsEl.querySelector('.season-tab');
+			if (firstTab) {
+				selectedSeason = firstTab.dataset.season || '';
+				updateSeasonTabs();
+			}
+		}
 		weatherSelectEl.value = '';
 		areaSelectEl.value = '';
+		if (searchInputEl) searchInputEl.value = '';
 
 		applyFilters();
 	}
 
 	function wireEvents() {
-		applyFiltersBtn.addEventListener('click', applyFilters);
 		resetFiltersBtn.addEventListener('click', resetFilters);
-		// เปลี่ยนค่า dropdown ให้กรองทันที
-		seasonSelectEl.addEventListener('change', applyFilters);
+		// เปลี่ยนค่า dropdown ให้กรองทันที (season tabs จัดการเองแล้ว)
 		weatherSelectEl.addEventListener('change', applyFilters);
 		areaSelectEl.addEventListener('change', applyFilters);
+		// ค้นหาแบบ real-time
+		if (searchInputEl) {
+			searchInputEl.addEventListener('input', applyFilters);
+		}
 		// toggle sort
 		priceSortBtn.addEventListener('click', () => {
 			// สลับเฉพาะ desc <-> asc; ครั้งแรกให้เป็น desc
@@ -294,8 +423,106 @@
 		if (raritySortIcon) raritySortIcon.dataset.state = raritySortDir || '';
 	}
 
+	let tooltipEl = null;
+
+	function createTooltip() {
+		if (tooltipEl) return tooltipEl;
+		tooltipEl = document.createElement('div');
+		tooltipEl.className = 'price-tooltip';
+		tooltipEl.hidden = true;
+		document.body.appendChild(tooltipEl);
+		return tooltipEl;
+	}
+
+	function showTooltip(trigger, imageUrl, tier1, tier2, tier3, tier4) {
+		const tooltip = createTooltip();
+		const rect = trigger.getBoundingClientRect();
+		const scrollX = window.scrollX || window.pageXOffset;
+		const scrollY = window.scrollY || window.pageYOffset;
+		
+		let content = '<div class="tooltip-tiers">';
+		if (typeof tier1 === 'number') content += `<div class="tier-item"><span class="tier-label">Tier 1</span><span class="tier-value">${tier1} ฿</span></div>`;
+		if (typeof tier2 === 'number') content += `<div class="tier-item"><span class="tier-label">Tier 2</span><span class="tier-value">${tier2} ฿</span></div>`;
+		if (typeof tier3 === 'number') content += `<div class="tier-item"><span class="tier-label">Tier 3</span><span class="tier-value">${tier3} ฿</span></div>`;
+		if (typeof tier4 === 'number') content += `<div class="tier-item"><span class="tier-label">Tier 4</span><span class="tier-value">${tier4} ฿</span></div>`;
+		content += '</div>';
+		
+		tooltip.innerHTML = content;
+		tooltip.hidden = false;
+		
+		// จัดตำแหน่ง tooltip ทางขวาของ cell-price
+		const tooltipRect = tooltip.getBoundingClientRect();
+		const left = rect.right + 12 + scrollX;
+		const top = rect.top + scrollY - (tooltipRect.height / 2) + (rect.height / 2);
+		
+		tooltip.style.left = `${left}px`;
+		tooltip.style.top = `${top}px`;
+	}
+
+	function hideTooltip() {
+		if (tooltipEl) tooltipEl.hidden = true;
+	}
+
+	function wireTooltips() {
+		const triggers = document.querySelectorAll('.tooltip-trigger');
+		triggers.forEach((trigger) => {
+			trigger.addEventListener('mouseenter', (e) => {
+				const img = trigger.dataset.image || '';
+				const t1 = trigger.dataset.tier1 ? Number(trigger.dataset.tier1) : undefined;
+				const t2 = trigger.dataset.tier2 ? Number(trigger.dataset.tier2) : undefined;
+				const t3 = trigger.dataset.tier3 ? Number(trigger.dataset.tier3) : undefined;
+				const t4 = trigger.dataset.tier4 ? Number(trigger.dataset.tier4) : undefined;
+				showTooltip(trigger, img, t1, t2, t3, t4);
+			});
+			trigger.addEventListener('mouseleave', hideTooltip);
+		});
+	}
+
+	// Map Modal
+	const mapModalEl = document.getElementById('mapModal');
+	const mapModalCloseEl = document.getElementById('mapModalClose');
+
+	function showMapModal() {
+		if (mapModalEl) {
+			mapModalEl.hidden = false;
+			document.body.style.overflow = 'hidden';
+		}
+	}
+
+	function hideMapModal() {
+		if (mapModalEl) {
+			mapModalEl.hidden = true;
+			document.body.style.overflow = '';
+		}
+	}
+
+	function wireMapButtons() {
+		const mapButtons = document.querySelectorAll('.map-tag-btn');
+		mapButtons.forEach((btn) => {
+			btn.addEventListener('click', (e) => {
+				e.stopPropagation();
+				showMapModal();
+			});
+		});
+	}
+
 	// init
 	wireEvents();
+	if (mapModalCloseEl) {
+		mapModalCloseEl.addEventListener('click', hideMapModal);
+	}
+	if (mapModalEl) {
+		const overlay = mapModalEl.querySelector('.map-modal-overlay');
+		if (overlay) {
+			overlay.addEventListener('click', hideMapModal);
+		}
+		// ปิด modal เมื่อกด ESC
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && !mapModalEl.hidden) {
+				hideMapModal();
+			}
+		});
+	}
 	loadData();
 })();
 
